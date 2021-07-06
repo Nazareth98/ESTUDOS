@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <form action="submit">
+                <div class="grupo-form" id="nomep">
+                    <label for="name">Name</label><br>
+                    <input class="todaArea" type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="grupo-form">
+                    <label for="email">Email</label><br>
+                    <input class="todaArea" type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="grupo-form">
+                    <label for="age">Age <span class="clue">(optional)</span></label><br>
+                    <input class="todaArea" type="number" name="age" id="age" placeholder="Age">
+                </div>
+                <div class="grupo-form">
+                    <p>Wich option describes your current role?</p>
+                    <select class="todaArea" lass="dropdown" id="role" name="role">
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full time Job</option>
+                        <option value="learner">Full time Learner</option>
+                        <option value="preferNo"> Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="grupo-form">
+                    <p>Would you recommend JavaScript to a friend?</p>
+                    <input class="input-radio" type="radio" name="recommend" id="definitely" value="definitely"> <label for="">Definitely </label> <br>
+                    <input class="input-radio" type="radio" name="recommend" id="maybe" value="maybe"> <label for="">Maybe </label> <br>
+                    <input class="input-radio" type="radio" name="recommend" id="not" value="not"> <label for="">Not sure</label> <br>
+                </div>
+                <div class="grupo-form">
+                    <p>What ir your favorite feature of CursoemVideo?</p>
+                    <select class="todaArea" class="dropdown" name="feature" id="feature">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open">Open Source</option>
+                    </select>
+                </div>
+                <div class="grupo-form">
+                    <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                    <input type="checkbox" class="paddingT" name="frontEnd" id="frontEnd"> Front-end Projects <br>
+                    <input type="checkbox" class="paddingT" name="backEnd" id="backEnd"> Back-end Projects<br>
+                    <input type="checkbox" class="paddingT" name="data" id="data"> Data Visualization<br>
+                    <input type="checkbox" class="paddingT" name="challenges" id="challenges"> Challenges<br>
+                    <input type="checkbox" class="paddingT" name="openSource" id="openSource"> Open Source Community<br>
+                    <input type="checkbox" class="paddingT" name="gitter" id="gitter"> Gitter help rooms<br>
+                    <input type="checkbox" class="paddingT" name="videos" id="videos"> Videos<br>
+                    <input type="checkbox" class="paddingT" name="meetups" id="meetups"> City Meetups<br>
+                    <input type="checkbox" class="paddingT" name="wiki" id="wiki"> Wiki<br>
+                    <input type="checkbox" class="paddingT" name="forum" id="forum"> Forum<br>
+                    <input type="checkbox" class="paddingT" name="add" id="add"> Additional Courses
+                </div>
+                <div class="grupo-form">
+                    <p>Any comments or suggestions?</p>
+                    <textarea class="todaArea" name="suggestions" id="suggestions" cols="30" rows="8" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="grupo-form">
+                    <input class="todaArea" id="button" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
